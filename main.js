@@ -1,18 +1,19 @@
-let a = 0;
-function sum() {
-  let b = 3;
-  console.log(a+b)
-    function sum1() {
-      let c = 5;
-      sum1 = b+c
+let num = 0;
+function sum(number) {
+  let a = number;
+  sum= num+a
+  console.log(sum)
+    function sum1(number) {
+      let b = number;
+      sum1 = sum+b
       console.log(sum1);
-      
     }
-    function sum2() {
-      let d = 20;
-      console.log(sum1+d);
+    function sum2(number) {
+      let c = number;
+      sum2 = c+sum1
+      console.log(sum2);
     }
-    sum1();
-    sum2();
+    sum1(5);
+    sum2(4);
 }
-sum();
+sum(5);
